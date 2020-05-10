@@ -1,0 +1,6 @@
+coverage_service: cobertura_xml
+xcodeproj: SwiftStaticLib.xcodeproj
+scheme: SwiftStaticLib
+output_directory: reports
+ignore:
+  - SwiftStaticLibTests/*
