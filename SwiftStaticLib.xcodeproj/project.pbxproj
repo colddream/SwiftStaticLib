@@ -14,7 +14,19 @@
 		901542AE2467B11600DAEC6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901542AC2467B11600DAEC6F /* Main.storyboard */; };
 		901542B02467B11800DAEC6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 901542AF2467B11800DAEC6F /* Assets.xcassets */; };
 		901542B32467B11800DAEC6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901542B12467B11800DAEC6F /* LaunchScreen.storyboard */; };
+		901542BF2467B3AB00DAEC6F /* SwiftStaticLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901542BE2467B3AB00DAEC6F /* SwiftStaticLibTests.swift */; };
+		901542C12467B3AB00DAEC6F /* libSwiftStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 901542962467B08100DAEC6F /* libSwiftStaticLib.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		901542C22467B3AB00DAEC6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9015428E2467B08100DAEC6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 901542952467B08100DAEC6F;
+			remoteInfo = SwiftStaticLib;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		901542942467B08100DAEC6F /* CopyFiles */ = {
@@ -39,6 +51,9 @@
 		901542AF2467B11800DAEC6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		901542B22467B11800DAEC6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		901542B42467B11800DAEC6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		901542BC2467B3AB00DAEC6F /* SwiftStaticLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftStaticLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		901542BE2467B3AB00DAEC6F /* SwiftStaticLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftStaticLibTests.swift; sourceTree = "<group>"; };
+		901542C02467B3AB00DAEC6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +71,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		901542B92467B3AB00DAEC6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				901542C12467B3AB00DAEC6F /* libSwiftStaticLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -64,6 +87,7 @@
 			children = (
 				901542982467B08100DAEC6F /* SwiftStaticLib */,
 				901542A52467B11600DAEC6F /* SwiftStaticLibExamples */,
+				901542BD2467B3AB00DAEC6F /* SwiftStaticLibTests */,
 				901542972467B08100DAEC6F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +97,7 @@
 			children = (
 				901542962467B08100DAEC6F /* libSwiftStaticLib.a */,
 				901542A42467B11600DAEC6F /* SwiftStaticLibExamples.app */,
+				901542BC2467B3AB00DAEC6F /* SwiftStaticLibTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +122,15 @@
 				901542B42467B11800DAEC6F /* Info.plist */,
 			);
 			path = SwiftStaticLibExamples;
+			sourceTree = "<group>";
+		};
+		901542BD2467B3AB00DAEC6F /* SwiftStaticLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				901542BE2467B3AB00DAEC6F /* SwiftStaticLibTests.swift */,
+				901542C02467B3AB00DAEC6F /* Info.plist */,
+			);
+			path = SwiftStaticLibTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +170,24 @@
 			productReference = 901542A42467B11600DAEC6F /* SwiftStaticLibExamples.app */;
 			productType = "com.apple.product-type.application";
 		};
+		901542BB2467B3AB00DAEC6F /* SwiftStaticLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 901542C62467B3AB00DAEC6F /* Build configuration list for PBXNativeTarget "SwiftStaticLibTests" */;
+			buildPhases = (
+				901542B82467B3AB00DAEC6F /* Sources */,
+				901542B92467B3AB00DAEC6F /* Frameworks */,
+				901542BA2467B3AB00DAEC6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				901542C32467B3AB00DAEC6F /* PBXTargetDependency */,
+			);
+			name = SwiftStaticLibTests;
+			productName = SwiftStaticLibTests;
+			productReference = 901542BC2467B3AB00DAEC6F /* SwiftStaticLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -150,6 +202,9 @@
 						CreatedOnToolsVersion = 11.2.1;
 					};
 					901542A32467B11600DAEC6F = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					901542BB2467B3AB00DAEC6F = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
@@ -168,6 +223,7 @@
 			projectRoot = "";
 			targets = (
 				901542952467B08100DAEC6F /* SwiftStaticLib */,
+				901542BB2467B3AB00DAEC6F /* SwiftStaticLibTests */,
 				901542A32467B11600DAEC6F /* SwiftStaticLibExamples */,
 			);
 		};
@@ -181,6 +237,13 @@
 				901542B32467B11800DAEC6F /* LaunchScreen.storyboard in Resources */,
 				901542B02467B11800DAEC6F /* Assets.xcassets in Resources */,
 				901542AE2467B11600DAEC6F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		901542BA2467B3AB00DAEC6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +268,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		901542B82467B3AB00DAEC6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				901542BF2467B3AB00DAEC6F /* SwiftStaticLibTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		901542C32467B3AB00DAEC6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 901542952467B08100DAEC6F /* SwiftStaticLib */;
+			targetProxy = 901542C22467B3AB00DAEC6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		901542AC2467B11600DAEC6F /* Main.storyboard */ = {
@@ -345,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -357,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -370,7 +451,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33TNG9DCG9;
 				INFOPLIST_FILE = SwiftStaticLibExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -387,12 +470,50 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33TNG9DCG9;
 				INFOPLIST_FILE = SwiftStaticLibExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.saritasa.SwiftStaticLibExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		901542C42467B3AB00DAEC6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftStaticLibTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.saritasa.SwiftStaticLibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		901542C52467B3AB00DAEC6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftStaticLibTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.saritasa.SwiftStaticLibTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -425,6 +546,15 @@
 			buildConfigurations = (
 				901542B62467B11800DAEC6F /* Debug */,
 				901542B72467B11800DAEC6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		901542C62467B3AB00DAEC6F /* Build configuration list for PBXNativeTarget "SwiftStaticLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				901542C42467B3AB00DAEC6F /* Debug */,
+				901542C52467B3AB00DAEC6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
