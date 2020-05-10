@@ -1,0 +1,2 @@
+# SwiftStaticLib
+Testing
