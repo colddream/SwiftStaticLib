@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		9015429A2467B08100DAEC6F /* SwiftStaticLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901542992467B08100DAEC6F /* SwiftStaticLib.swift */; };
+		901542A72467B11600DAEC6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901542A62467B11600DAEC6F /* AppDelegate.swift */; };
+		901542A92467B11600DAEC6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901542A82467B11600DAEC6F /* SceneDelegate.swift */; };
+		901542AB2467B11600DAEC6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901542AA2467B11600DAEC6F /* ViewController.swift */; };
+		901542AE2467B11600DAEC6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901542AC2467B11600DAEC6F /* Main.storyboard */; };
+		901542B02467B11800DAEC6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 901542AF2467B11800DAEC6F /* Assets.xcassets */; };
+		901542B32467B11800DAEC6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901542B12467B11800DAEC6F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +31,25 @@
 /* Begin PBXFileReference section */
 		901542962467B08100DAEC6F /* libSwiftStaticLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSwiftStaticLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		901542992467B08100DAEC6F /* SwiftStaticLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftStaticLib.swift; sourceTree = "<group>"; };
+		901542A42467B11600DAEC6F /* SwiftStaticLibExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStaticLibExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		901542A62467B11600DAEC6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		901542A82467B11600DAEC6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		901542AA2467B11600DAEC6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		901542AD2467B11600DAEC6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		901542AF2467B11800DAEC6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		901542B22467B11800DAEC6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		901542B42467B11800DAEC6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		901542932467B08100DAEC6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		901542A12467B11600DAEC6F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				901542982467B08100DAEC6F /* SwiftStaticLib */,
+				901542A52467B11600DAEC6F /* SwiftStaticLibExamples */,
 				901542972467B08100DAEC6F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				901542962467B08100DAEC6F /* libSwiftStaticLib.a */,
+				901542A42467B11600DAEC6F /* SwiftStaticLibExamples.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +83,20 @@
 				901542992467B08100DAEC6F /* SwiftStaticLib.swift */,
 			);
 			path = SwiftStaticLib;
+			sourceTree = "<group>";
+		};
+		901542A52467B11600DAEC6F /* SwiftStaticLibExamples */ = {
+			isa = PBXGroup;
+			children = (
+				901542A62467B11600DAEC6F /* AppDelegate.swift */,
+				901542A82467B11600DAEC6F /* SceneDelegate.swift */,
+				901542AA2467B11600DAEC6F /* ViewController.swift */,
+				901542AC2467B11600DAEC6F /* Main.storyboard */,
+				901542AF2467B11800DAEC6F /* Assets.xcassets */,
+				901542B12467B11800DAEC6F /* LaunchScreen.storyboard */,
+				901542B42467B11800DAEC6F /* Info.plist */,
+			);
+			path = SwiftStaticLibExamples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +119,23 @@
 			productReference = 901542962467B08100DAEC6F /* libSwiftStaticLib.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		901542A32467B11600DAEC6F /* SwiftStaticLibExamples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 901542B52467B11800DAEC6F /* Build configuration list for PBXNativeTarget "SwiftStaticLibExamples" */;
+			buildPhases = (
+				901542A02467B11600DAEC6F /* Sources */,
+				901542A12467B11600DAEC6F /* Frameworks */,
+				901542A22467B11600DAEC6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftStaticLibExamples;
+			productName = SwiftStaticLibExamples;
+			productReference = 901542A42467B11600DAEC6F /* SwiftStaticLibExamples.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +147,9 @@
 				ORGANIZATIONNAME = "Thang Do";
 				TargetAttributes = {
 					901542952467B08100DAEC6F = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					901542A32467B11600DAEC6F = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
@@ -111,9 +168,23 @@
 			projectRoot = "";
 			targets = (
 				901542952467B08100DAEC6F /* SwiftStaticLib */,
+				901542A32467B11600DAEC6F /* SwiftStaticLibExamples */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		901542A22467B11600DAEC6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				901542B32467B11800DAEC6F /* LaunchScreen.storyboard in Resources */,
+				901542B02467B11800DAEC6F /* Assets.xcassets in Resources */,
+				901542AE2467B11600DAEC6F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		901542922467B08100DAEC6F /* Sources */ = {
@@ -124,7 +195,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		901542A02467B11600DAEC6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				901542AB2467B11600DAEC6F /* ViewController.swift in Sources */,
+				901542A72467B11600DAEC6F /* AppDelegate.swift in Sources */,
+				901542A92467B11600DAEC6F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		901542AC2467B11600DAEC6F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				901542AD2467B11600DAEC6F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		901542B12467B11800DAEC6F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				901542B22467B11800DAEC6F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9015429B2467B08100DAEC6F /* Debug */ = {
@@ -265,6 +365,40 @@
 			};
 			name = Release;
 		};
+		901542B62467B11800DAEC6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftStaticLibExamples/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.saritasa.SwiftStaticLibExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		901542B72467B11800DAEC6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftStaticLibExamples/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.saritasa.SwiftStaticLibExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -282,6 +416,15 @@
 			buildConfigurations = (
 				9015429E2467B08100DAEC6F /* Debug */,
 				9015429F2467B08100DAEC6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		901542B52467B11800DAEC6F /* Build configuration list for PBXNativeTarget "SwiftStaticLibExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				901542B62467B11800DAEC6F /* Debug */,
+				901542B72467B11800DAEC6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
