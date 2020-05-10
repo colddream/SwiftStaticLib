@@ -3,7 +3,7 @@ language: swift
 osx_image: xcode11.2
 env:
   matrix:
-    - TEST_SDK=iphoneos13.2
+    - TEST_SDK=iphonesimulator13.2.2 OS=13.2.2
     - TEST_SDK=iphoneos13.2 OS=13.2
 
 script:
