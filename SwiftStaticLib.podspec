@@ -9,7 +9,8 @@ This CocoaPods library helps you perform calculation.
                    DESC
 
   spec.homepage     = "https://github.com/colddream/SwiftStaticLib"
-  spec.author             = { "Thang Do" => "thang.do@saritasa.com" }
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
+  spec.author       = { "Thang Do" => "thang.do@saritasa.com" }
   
   spec.ios.deployment_target = "9.0"
   spec.swift_version = "5"
