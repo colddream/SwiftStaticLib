@@ -11,6 +11,7 @@ script:
   - set -o pipefail && xcodebuild test -enableCodeCoverage YES -project SwiftStaticLib.xcodeproj -scheme SwiftStaticLib -sdk $TEST_SDK -destination "platform=iOS Simulator,OS=$OS,name=$NAME" ONLY_ACTIVE_ARCH=YES
 
 after_success:
+# public repo on Travis CI (public here mean public on Travis only, it not mention github repo public)
 bash <(curl -s https://codecov.io/bash)
 # bash <(curl -s https://codecov.io/bash) -t {CODECOV_TOKEN} # for private need token
 # - slather
