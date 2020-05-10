@@ -1,4 +1,5 @@
-language: swift
+language:
+- swift
 
 osx_image: xcode11.2
 env:
